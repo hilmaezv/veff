@@ -17,7 +17,6 @@
     width: 1024px;
 }
 
-
 .flex-pageheader {
 	display: -webkit-flex;
     display: flex;
@@ -60,6 +59,7 @@
     -webkit-align-items: center;
     align-items: center;
     background-color: red;
+    justify-content: center;
     width: 1024px;
 }
 .container-news{
@@ -68,6 +68,9 @@
     flex-direction: row;
     -webkit-align-items: center;
     align-items: center;
+    justify-content: center;
+    background-color: blue;
+
 }
 .flex-news {
 	display: -webkit-flex;
