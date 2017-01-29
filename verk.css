@@ -1,15 +1,14 @@
 
 /*keyrt í chrome*/
-.container{
+.container-header{
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
     -webkit-align-items: center;
     align-items: center;
-    background-color: blue;
 }
 
-.container-schoolheader {
+.flex-schoolheader {
 	display: -webkit-flex;
     display: flex;
     flex-direction: row;
@@ -19,7 +18,7 @@
 }
 
 
-.container-pageheader {
+.flex-pageheader {
 	display: -webkit-flex;
     display: flex;
     background-color: grey;
@@ -38,13 +37,19 @@
     background-color: blue;
 }
 
-.item-main {
+.flex-left{
     background-color: cornflowerblue;
     width: 100px;
     height: 100px;
     margin: 10px;
 }
 
+.flex-main {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
 .container-news{
     display: -webkit-flex;
     display: flex;
