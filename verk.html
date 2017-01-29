@@ -1,3 +1,8 @@
+
+<!--
+/*keyrt í chrome*/
+/*veit af id-villum, ekki gott, fúsk*/
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,159 +11,164 @@
 </head>
 <body>
 	<header class="container-header">
+			
 		<div class="flex-schoolheader">
 
 			<h1>YourSchool</h1>
 			<img id="logo" src="sitelogo.png" alt="This picture probably doesn’t exist"  />
-
 		</div>
+		
 	
-		<div class="flex-pageheader">
-			<h2>Students list</h2>
+		<div class="flex-pageheader-container">
+			<div class="flex-pageheader">
+				<h2>Students list</h2>
+			</div>
 		</div>
 	</header>
 
 	<main class="container-main">
 	<div class="flex-middle">
-	<div class="flex-left">
-		<ul>
-			<li><a href="">Homepage</a></li>
-			<li><a href="">Students List</a></li>
-			<li><a href="">Messages</a></li>
-			<li><a href="">Learning outcome</a></li>
-			<li><a href="">Teaching methods</a></li>
-			<li><a href="">Assessment meth</a></li>
-			<li><a href="">Syllabus</a></li>
-			<li><a href="">Timeplan</a></li>
-			<li><a href="">Books</a></li>
-			<li><a href="">Assignments</a></li>
-			<li><a href="">Settings</a></li>
-		</ul>
+		<div class="flex-left">
+			<ul id="bar">
+				<li><a href="">Homepage</a></li>
+				<li><a href="">Students List</a></li>
+				<li><a href="">Messages</a></li>
+				<li><a href="">Learning outcome</a></li>
+				<li><a href="">Teaching methods</a></li>
+				<li><a href="">Assessment meth</a></li>
+				<li><a href="">Syllabus</a></li>
+				<li><a href="">Timeplan</a></li>
+				<li><a href="">Books</a></li>
+				<li><a href="">Assignments</a></li>
+				<li><a href="">Settings</a></li>
+			</ul>
+		</div>
+		<div class="flex-main">
+			<h4>Students</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div>
+				<div id="seek">
+					<label for="input-name">Name</label>
+					<input type = "text" id = "input-name" />
+					<label for="department">Department</label>
+					<select id="department" name="department">
+						<option value="1" selected="selected">All</option>
+						<option value="2">Business</option>
+						<option value="3">Computer Science</option>				
+						<option value="4">Engineering</option>
+						<option value="5">Law</option>
+					</select>
+					<label for="active">Active</label>
+					<input id="active" type="checkbox"/>
+					<input type="submit" value="Search" id="submit"/>
+				</div>
+			</div>
+			<div>
+				<table>
+					<thead>
+						<tr>
+							<th class="num">#</th>
+							<th>Name</th>
+							<th>Email</th>
+							<th>Department</th>
+							<th>Phone</th>
+							<th>Photo</th>
+							<th>Active</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="num">1</td>
+							<td>John doe</td>
+							<td><a id="mail" href="mailto:johndoe@example.com">johndoe@example.com</a></td>
+							<td>Computer Science</td>
+							<td>555 4321</td>
+							<td><img src="http://www.medmath.com/assets/no_profile-e7da098727586478701d3f16def38b13.jpg" alt=
+							"This picture probably doesn’t exist" height="42" /></td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class="num">2</td>
+							<td>John doe</td>
+							<td><a id="mail" href="mailto:johndoe@example.com">johndoe@example.com</a></td>
+							<td>Computer Science</td>
+							<td>555 4321</td>
+							<td><img src="http://www.medmath.com/assets/no_profile-e7da098727586478701d3f16def38b13.jpg" alt=
+							"This picture probably doesn’t exist" height="42" /></td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class="num">3</td>
+							<td>John doe</td>
+							<td><a id="mail" href="mailto:johndoe@example.com">johndoe@example.com</a></td>
+							<td>Computer Science</td>
+							<td>555 4321</td>
+							<td><img src="http://www.medmath.com/assets/no_profile-e7da098727586478701d3f16def38b13.jpg" alt=
+							"This picture probably doesn’t exist" height="42" /></td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td class="num">4</td>
+							<td>John doe</td>
+							<td><a id="mail" href="mailto:johndoe@example.com">johndoe@example.com</a></td>
+							<td>Computer Science</td>
+							<td>555 4321</td>
+							<td><img src="http://www.medmath.com/assets/no_profile-e7da098727586478701d3f16def38b13.jpg" alt=
+							"This picture probably doesn’t exist" height="42" /></td>
+							<td>No</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>	
 	</div>
-	<div class="flex-main">
-		<h4>Students</h4>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		<div>
-			<label for="input-name">Name</label>
-			<input type = "text" id = "input-name" />
+	</main>
+	<hr>	
+	<div class="container-news">
 
-			<label for="department">Department</label>
-			<select id="department" name="department">
-				<option value="1" selected="selected">All</option>
-				<option value="2">Business</option>
-				<option value="3">Computer Science</option>				
-				<option value="4">Engineering</option>
-				<option value="5">Law</option>
-			</select>
-			<label for="active">Active</label>
-			<input id="active" type="checkbox"/>
-			<input type="submit" value="Search"/>
+	<div class="flex-news">
+		<div class="item-news">
+			<h3>Latest messages</h3>
+			<div>
+				<a href="" id="date">17. mars 2016</a>
+				<p>Lorem ipsum solor sit amet</p>
+			</div>
+			<div>
+				<a href="" id="date">17. mars 2016</a>
+				<p>Lorem ipsum solor sit amet</p>
+			</div>
+		</div>
+		<div class="item-news">
+			<h3>Latest messages</h3>
+			<div>
+				<a href="" id="date">17. mars 2016</a>
+				<p>Lorem ipsum solor sit amet</p>
+			</div>
+			<div>
+				<a href="" id="date">17. mars 2016</a>
+				<p>Lorem ipsum solor sit amet</p>
+			</div>
+		</div>
+		<div class="item-news">
+		<h3>Latest messages</h3>
+		<div>
+			<a href="" id="date">17. mars 2016</a>
+			<p>Lorem ipsum solor sit amet</p>
 		</div>
 		<div>
-			<table>
-				<thead>
-					<tr>
-						<th scope="col">#</th>
-						<th scope="col">Name</th>
-						<th scope="col">Email</th>
-						<th scope="col">Department</th>
-						<th scope="col">Phone</th>
-						<th scope="col">Photo</th>
-						<th scope="col">Active</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>John doe</td>
-						<td><a href="mailto:johndoe@example.com">johndoe@example.com</a></td>
-						<td>Computer Science</td>
-						<td>555 4321</td>
-						<td><img src="http://www.medmath.com/assets/no_profile-e7da098727586478701d3f16def38b13.jpg" alt=
-						"This picture probably doesn’t exist" height="42" /></td>
-						<td>Yes</td>
-					</tr>
-									<tr>
-						<td>2</td>
-						<td>John doe</td>
-						<td><a href="mailto:johndoe@example.com">johndoe@example.com</a></td>
-						<td>Computer Science</td>
-						<td>555 4321</td>
-						<td><img src="http://www.medmath.com/assets/no_profile-e7da098727586478701d3f16def38b13.jpg" alt=
-						"This picture probably doesn’t exist" height="42" /></td>
-						<td>Yes</td>
-					</tr>
-									<tr>
-						<td>3</td>
-						<td>John doe</td>
-						<td><a href="mailto:johndoe@example.com">johndoe@example.com</a></td>
-						<td>Computer Science</td>
-						<td>555 4321</td>
-						<td><img src="http://www.medmath.com/assets/no_profile-e7da098727586478701d3f16def38b13.jpg" alt=
-						"This picture probably doesn’t exist" height="42" /></td>
-						<td>Yes</td>
-					</tr>
-									<tr>
-						<td>4</td>
-						<td>John doe</td>
-						<td><a href="mailto:johndoe@example.com">johndoe@example.com</a></td>
-						<td>Computer Science</td>
-						<td>555 4321</td>
-						<td><img src="http://www.medmath.com/assets/no_profile-e7da098727586478701d3f16def38b13.jpg" alt=
-						"This picture probably doesn’t exist" height="42" /></td>
-						<td>Yes</td>
-					</tr>
-				</tbody>
-			</table>
+			<a href="" id="date">17. mars 2016</a>
+			<p>Lorem ipsum solor sit amet</p>
+		</div>
 		</div>
 	</div>	
 	</div>
-	</main>
-
-	<div class="container-news">
-
-	<div class="flex-middle">
-		<div class="flex-news">
-			<h3>Latest messages</h3>
-			<div>
-				<a href="">17. mars 2016</a>
-				<p>Lorem ipsum solor sit amet</p>
-			</div>
-			<div>
-				<a href="">17. mars 2016</a>
-				<p>Lorem ipsum solor sit amet</p>
-			</div>
-		</div>
-		<div class="flex-news">
-			<h3>Latest messages</h3>
-			<div>
-				<a href="">17. mars 2016</a>
-				<p>Lorem ipsum solor sit amet</p>
-			</div>
-			<div>
-				<a href="">17. mars 2016</a>
-				<p>Lorem ipsum solor sit amet</p>
-			</div>
-		</div>
-		<div class="flex-news">
-		<h3>Latest messages</h3>
-		<div>
-			<a href="">17. mars 2016</a>
-			<p>Lorem ipsum solor sit amet</p>
-		</div>
-		<div>
-			<a href="">17. mars 2016</a>
-			<p>Lorem ipsum solor sit amet</p>
-		</div>
-		</div>
-	</div>		
-	</div>
+	<hr>	
 	<footer class="container-footer">
-		<div>
-			<ul>
+		<div class="flex-footer" id="foot">
+			<ul >
 				<li>Mainstreet 13</li>
 				<li>666 Reykjavík</li>
-				<li><a href="mailto:yourschool@yourschool.is">yourschool@yourschool.is</a></li>
+				<li><a id="mail" href="mailto:yourschool@yourschool.is">yourschool@yourschool.is</a></li>
 				<li>Phone: 555 1234</li>
 			</ul>
 		</div>

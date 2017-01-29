@@ -1,6 +1,16 @@
 
 /*keyrt í chrome*/
-.container-header{
+/*veit af id-villum, ekki gott, fúsk*/
+body {
+    font-family: Verdana;
+    font-size:12px;
+    color: rgb(74, 74, 74);
+    padding:0;
+    margin: 0;
+}
+
+/*header-----------------*/
+.container-header {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
@@ -11,85 +21,214 @@
 .flex-schoolheader {
 	display: -webkit-flex;
     display: flex;
+    flex: 0 0 100%;
     flex-direction: row;
     align-items: center;
-   justify-content: flex-end;
+    justify-content: flex-end;
     width: 1024px;
+}
+
+.flex-pageheader-container {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(240, 240, 240);
+    border-top: 3px solid rgb(221, 221, 221);
+    border-bottom: 3px solid rgb(221, 221, 221);
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   justify-content: center;              
 }
 
 .flex-pageheader {
 	display: -webkit-flex;
     display: flex;
-    background-color: grey;
     width: 1024px;
     flex-direction: row;
     align-items: center;
    justify-content: flex-start;
 }
-
-.container-main{
+/*main-------------------*/
+.container-main {
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
     -webkit-align-items: center;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    background-color: blue;
-
 }
-.flex-middle{
+
+main {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.flex-middle {
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
-    align-items: center;
-    background-color: red;
-    width: 1024px;
-}
-
-.flex-left{
-
-}
-
-.flex-main {
-
-}
-.flex-middle{
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    background-color: red;
+    align-items: flex-start;
     justify-content: center;
     width: 1024px;
 }
-.container-news{
+
+/*news---------------*/
+.container-news {
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
     -webkit-align-items: center;
-    align-items: center;
     justify-content: center;
-    background-color: blue;
-
 }
+
 .flex-news {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    justify-content: space-between;
+    width: 1024px;
+}
+
+.item-news {
+    width: 25%;
+    background-color: rgb(240, 240, 240);
+    border-top: 3px solid rgb(221, 221, 221);
 	display: -webkit-flex;
     display: flex;
     flex-direction: column;
-    align-items: center;
-   justify-content: center;
+    align-items: stretch;
+    justify-content: center;
+    padding: 5px;
 }
 
-
+/*footer----------------*/
 .container-footer {
+    display: -webkit-flex;
+    display: flex;
+    height:80px;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+.flex-footer {
 	display: -webkit-flex;
     display: flex;
-    background-color: green;
-    width:1024px;
+    width: 1024px;
+    justify-content: flex-end;
 }
 
-#logo{
+/*annað--------------*/
+
+/*id-----------------*/
+#logo {
 	display: block;
 	height:3em;
     margin-left:1%
 }
+
+#bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    text-transform: uppercase;
+}
+
+#mail { 
+    color: rgb(236, 28, 51);
+    font-weight: bold;
+ }
+
+ #seek {
+    padding: 15px;
+    color: rgb(41, 41, 41);
+    font-weight: bold;
+ }
+
+#department {
+    color: rgb(90, 90, 90);
+}
+
+#date {
+    color: rgb(189, 35, 35);
+}
+
+#foot ul{
+    list-style-type: none;
+    margin:0;
+    padding:10px;
+}
+#foot li, #foot a {
+    display: inline;
+    padding: 10px;
+}
+
+#submit {
+    border-radius: 2px;
+    background-color: white;
+    border: 1px solid rgb(74, 74, 74);
+}
+#input-name, #department {
+    border-radius: 2px;
+    border: 1px solid rgb(74, 74, 74);
+}
+
+
+/*table-----------*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+        text-align: left;
+}
+
+.num {
+    text-align: center;
+}
+
+/*left-list------*/
+li  a:hover, li a:active {
+    color: rgb(189, 35, 35);
+    font-weight:bold;
+}
+a:link,  a:visited {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+}
+
+li a {
+    display: block;
+    padding: 3px;
+}
+
+/*headings-------*/
+
+h1 {
+    color: rgb(189, 35, 35)
+ }
+
+ h2 {
+    color: rgb(41, 41, 41);
+    text-transform: uppercase;
+ }
+ h3, h4 {
+    color: rgb(41, 41, 41)
+ }
+
+
+/*rule------------*/
+hr {
+    height: 3px;
+    background-color:rgb(240,240,240);
+    color:rgb(240,240,240);
+    border: 0 none;
+}
+
